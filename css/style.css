@@ -23,6 +23,7 @@
     --text-color: #1b1c21;
     --text-select-color: #7E7E82;
     --decore-turqoise-color: #41F6D7;
+    --bg-buttons-color: #FF3E79;
 }
 
 body {
@@ -57,6 +58,11 @@ body {
   height: 40px;
   border-radius: 50%;
   border: none;
+  transition: filter 0.2s linear;
+}
+
+.button:hover {
+    filter: drop-shadow(0 0 8px var(--bg-buttons-color));
 }
 
 .button--close {
