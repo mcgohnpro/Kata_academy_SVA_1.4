@@ -1,19 +1,19 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url("/fonts/TTLakes-Regular.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/fonts/TTLakes-Medium.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("/fonts/TTLakes-Bold.ttf") format("truetype");
+  src: url("../fonts/TTLakes-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .button--close {
-  background-image: url("/images/buttons/burger_close.svg");
+  background-image: url("../images/buttons/burger_close.svg");
 }
 
 .menu__button--close {
@@ -72,7 +72,7 @@ body {
 }
 
 .button--search {
-  background-image: url("/images/buttons/search.svg");
+  background-image: url("../images/buttons/search.svg");
 }
 
 .menu__nav {
@@ -100,7 +100,7 @@ body {
     width: 4px;
     height: 32px;
     left: 0;
-    background-image: url("/images/highlight.svg");
+    background-image: url("../images/highlight.svg");
     background-repeat: no-repeat;
     background-size: 3px 32px;
     transform: translateY(-15%);
@@ -143,15 +143,15 @@ body {
 }
 
 .button--call {
-    background-image: url("/images/buttons/call.svg");
+    background-image: url("../images/buttons/call.svg");
 }
 
 .button--chat {
-    background-image: url("/images/buttons/chat.svg");
+    background-image: url("../images/buttons/chat.svg");
 }
 
 .button--profile {
-    background-image: url("/images/buttons/profile.svg");
+    background-image: url("../images/buttons/profile.svg");
 }
 
 .menu__contacts {
