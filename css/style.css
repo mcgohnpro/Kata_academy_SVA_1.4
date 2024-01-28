@@ -61,10 +61,6 @@ body {
   transition: filter 0.2s linear;
 }
 
-.button:hover {
-    filter: drop-shadow(0 0 8px var(--bg-buttons-color));
-}
-
 .button--close {
   background-image: url("../images/buttons/burger_close.svg");
 }
@@ -118,20 +114,11 @@ body {
     padding: 10px 0;
     text-decoration: none;
     color: #1B1C21;
-    transition: filter 0.2s linear;
+    transition: filter 0.2s linear, opacity 0.2s linear;
 }
 
 .menu__item-link--current {
     color: var(--text-select-color);
-}
-
-.menu__item-link:hover {
-    filter: drop-shadow(0 0 5px var(--decore-turqoise-color));
-}
-
-.menu__item-link:active {
-    filter: drop-shadow(0 0 15px var(--decore-turqoise-color));
-    color: var(--decore-turqoise-color);
 }
 
 .contact-group {
@@ -191,9 +178,35 @@ body {
     margin-right: 7px;
     padding: 0;
     font-weight: 500;
-
+    transition: opacity 0.2s linear;
 }
 
 .menu__button-lang--current {
     color: var(--text-select-color);
 }
+
+/* Решение проблемы зависающего ховера на мобилке */
+@media (hover:hover) {
+  .button:hover {
+    filter: drop-shadow(0 0 8px var(--bg-buttons-color));
+  }
+  .menu__item-link:hover {
+    opacity: 0.6;
+  }
+  .menu__item-link:active {
+    color: var(--decore-turqoise-color);
+  }
+  .menu__button-lang:hover {
+    opacity: 0.5;
+  }
+}
+
+@media (hover:none) {
+  .button:active {
+    filter: drop-shadow(0 0 8px var(--bg-buttons-color));
+  }
+  .menu__item-link:active {
+    color: var(--decore-turqoise-color);
+  }
+}
+
